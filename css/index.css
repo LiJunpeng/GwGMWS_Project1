@@ -1,6 +1,45 @@
 @charset "utf-8";
 
-#maincontent {
+/*h1 {
   background-color: #f3f3f3;
   min-height: 100%;
+}*/
+
+@media screen and (max-width: 450px) {
+
+	body {
+		background-color: red;
+	}
+
+	h1 {
+	  background-color: #f3f3f3;
+	  min-height: 100%;
+	}
+
+}
+
+@media screen and (min-width: 451px) and (max-width: 1000px) {
+
+	body {
+		background-color: blue;
+	}
+
+	h1 {
+	  background-color: #f3f3f3;
+	  min-height: 100%;
+	}
+
+}
+
+@media screen and (min-width: 1001px) {
+
+	body {
+		background-color: green;
+	}
+
+	h1 {
+	  background-color: #f3f3f3;
+	  min-height: 100%;
+	}
+
 }
