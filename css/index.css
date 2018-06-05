@@ -7,39 +7,61 @@
 
 @media screen and (max-width: 450px) {
 
-	body {
+
+
+	#neighborhoods-select {
+		width: calc((100% - 10px) / 2 - 20px) ;
+		display: inline-block;
+	}
+
+	#cuisines-select {
+		width: calc((100% - 10px) / 2 - 20px);
+		display: inline-block;
+	}
+
+
+	.filter-options {
+
+	}
+
+	#restaurants-list li {
+		text-align: center;
+
+	}
+
+/*	body {
 		background-color: red;
 	}
 
 	h1 {
 	  background-color: #f3f3f3;
 	  min-height: 100%;
-	}
+	}*/
 
 }
 
 @media screen and (min-width: 451px) and (max-width: 1000px) {
 
-	body {
+/*	body {
 		background-color: blue;
 	}
 
 	h1 {
 	  background-color: #f3f3f3;
 	  min-height: 100%;
-	}
+	}*/
 
 }
 
 @media screen and (min-width: 1001px) {
 
-	body {
+/*	body {
 		background-color: green;
 	}
 
 	h1 {
 	  background-color: #f3f3f3;
 	  min-height: 100%;
-	}
+	}*/
 
 }
