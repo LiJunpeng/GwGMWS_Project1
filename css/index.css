@@ -5,6 +5,14 @@
   min-height: 100%;
 }*/
 
+header {
+	position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
 @media screen and (max-width: 450px) {
 
 
@@ -57,17 +65,18 @@
 
 	#map-container {
 		position: fixed;
-		top: 0px;
+		top: 80px;
 		right: 0px;
 		order: 2;
 		width: 100%;
-		height: 100%;
+		height: 400px;
 	}
 
 	#list-container {
-		z-index: 1;
-		order: 1;
-		max-width: 350px;
+		position: relative;
+		top: 481px;
+		left: 10%;
+		width: 80%;
 	}
 
 
@@ -86,13 +95,27 @@
 
 @media screen and (min-width: 1001px) {
 
-/*	body {
-		background-color: green;
+	#maincontent {
+		display: flex;
 	}
 
-	h1 {
-	  background-color: #f3f3f3;
-	  min-height: 100%;
-	}*/
+	#map-container {
+		position: fixed;
+		top: 80px;
+		right: 0px;
+		order: 2;
+		width: calc(100% - 350px);
+		height: 100%;
+	}
+
+	#map {
+		height: 100%;
+	}
+
+	#list-container {
+		z-index: 1;
+		order: 1;
+		width: 350px;
+	}
 
 }
