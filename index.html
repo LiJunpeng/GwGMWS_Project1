@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
@@ -16,11 +16,12 @@
     </nav>
   </header>
 
+  <a class="skip-map" href="#list-container">Skip Google Map</a>
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application"></div>
     </section>
-    <section id="list-container">
+    <section id="list-container" role="main">
       <div class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
@@ -41,9 +42,9 @@
   <script type="text/javascript">
   	if ('serviceWorker' in navigator) {
   	  navigator.serviceWorker.register('index.js').then(function(registration) {
-      console.log("Service Worker registered");
-    }).catch(function(err) {
-      console.log('Failed to register Service Worker', err);
+        console.log("Service Worker registered");
+      }).catch(function(err) {
+        console.log('Failed to register Service Worker', err);
     });
   }
   </script>

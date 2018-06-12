@@ -12,6 +12,15 @@
   z-index: 1000;
 }
 
+a.skip-map {
+  position:absolute;
+  left:-999px;
+  z-index:-99;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
 #map {
   height: 100%;
 }

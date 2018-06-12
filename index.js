@@ -18,13 +18,17 @@ self.addEventListener('fetch', function(event) {
       if (response) {
         return response;
       } else {
-    	fetch(event.request).then(function(response) {
-	      caches.open(cacheName).then(function(cache) {
-	        cache.put(event.request, response.clone());
-	      }).then(function() {
-	        return response;
-	      }); 
-    	});
+
+      let fetchRequest = event.request.clone();
+      return fetch(fetchRequest).then(function(response) {
+      	let result = response.clone();
+
+      	caches.open(cacheName).then(function(cache) {
+      		cache.put(event.request, result);
+      	});
+
+      	return response;
+      	});
       }
     })
   );
